@@ -1,5 +1,6 @@
 <?php
 
+
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
@@ -22,9 +23,9 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
-Route::get('/products', [ProductController::class, 'index'])->name('products.index');
-Route::get('/products/{product}', [ProductController::class, 'show'])->name('products.show');
-
+Route::get('/products', [ProductController::class, 'index'])->name('products.index'); //菜單
+Route::get('/products/{product}', [ProductController::class, 'show'])->name('products.show'); //菜單個別資訊
+Route::post('/products',[ProductController::class, 'store'])->middleware('auth')->name('products.store');//加入購物車
 
 
 
