@@ -19,4 +19,14 @@ class Product extends Model
         'type',
     ];
 
+
+    public function orderlists()
+    {
+        $this->hasMany(Orderlist::class);
+    }
+
+    public function carts()
+    {
+        $this->hasMany(Cart::class);
+    }
 }

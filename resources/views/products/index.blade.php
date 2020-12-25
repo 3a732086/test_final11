@@ -30,6 +30,7 @@
                         </h4>
                         <p class="card-text"></p>
                         <p class="">${{$product->price}}</p>
+                        <p class="">{{$product->type}}</p>
                     </div>
                 </div>
             </div>

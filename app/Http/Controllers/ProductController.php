@@ -18,11 +18,11 @@ class ProductController extends Controller
     }
 
 
-    public function show($id)
+    public function show(Product $product)
     {
-        $product = Product::find($id);
+        //$product = Product::find($id);
         $data = [
-            'products' => $product,
+            'product' => $product,
         ];
         return view('products.show', $data);
    }

@@ -8,10 +8,10 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('products.index')}}">菜單</a>
+                    <a class="nav-link" href="{{route('home.index')}}">首頁</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="services.html">Services</a>
+                    <a class="nav-link" href="{{route('products.index')}}">菜單</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
